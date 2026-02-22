@@ -546,10 +546,5 @@ PART 12: SAFETY WARNINGS
 PART 13: CONTACT & SUPPORT
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  • GitHub: https://github.com/YOUR_REPO_HERE
-  • Issues: https://github.com/YOUR_REPO_HERE/issues
-  • Discord: optional server for community help
-
-╔══════════════════════════════════════════════════════════════════════════════════╗
-║                              END OF README                                         ║
-╚══════════════════════════════════════════════════════════════════════════════════╝
+  • GitHub: https://github.com/evanblokender/Youtube-vm
+  • Issues: https://github.com/evanblokender/Youtube-vm/issues
