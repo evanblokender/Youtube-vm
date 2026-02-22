@@ -1,0 +1,35 @@
+{
+  "youtube_api_key": "AIzaSyDwfb5r047yrEIXxaK7BM8WVnKKaix50LA",
+  "youtube_channel_id": "UCdBo6szcotOIA0AowFNZ3aw",
+  "youtube_client_id": "851988154289-v4ckuhsudroop9cjf62v36fanbmaqo0v.apps.googleusercontent.com",
+  "youtube_client_secret": "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",
+  "youtube_refresh_token": "1//05vO5_JJbEdxFCgYIARAAGAUSNwF-L9Ir75S3Oq5LksGIbPqvgW_-FGrq1vnxleIvJ6Ruk61QPpCaNKEmD__sVJR7PQdd5-2s7MY",
+  "youtube_live_chat_id": "Cg0KC252bXEtNkJrRDRNKicKGFVDZEJvNnN6Y290T0lBMEFvd0ZOWjNhdxILbnZtcS02QmtENE0",
+
+  "vm_name": "Arch",
+  "vboxmanage_path": "VBoxManage",
+  "snapshot_name": "SafeBase",
+  "screenshot_interval": 1.0,
+
+  "vote_duration": 20,
+  "command_cooldown": 0.5,
+  "user_cooldown": 3.0,
+  "max_wait_seconds": 10,
+  "queue_max_size": 50,
+  "type_max_length": 100,
+
+  "mouse_max_delta": 300,
+  "mouse_abs_x_max": 1920,
+  "mouse_abs_y_max": 1080,
+
+  "points_per_command": 1,
+  "points_per_vote_win": 5,
+  "leaderboard_size": 10,
+
+  "admin_user_ids": ["UCdBo6szcotOIA0AowFNZ3aw"],
+  "mod_user_ids": [],
+
+  "stream_title": "YouTube Chat Controls Arch Linux Install!",
+  "auto_restart_on_failure": true,
+  "data_dir": "data"
+}

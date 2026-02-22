@@ -1,0 +1,68 @@
+2026-02-21 22:04:21,076 [INFO] user_db: Loaded 5 users
+2026-02-21 22:04:21,079 [INFO] bot: Starting OBS overlay server...
+2026-02-21 22:04:21,081 [INFO] bot: Connecting to YouTube Live Chat (read-only)...
+2026-02-21 22:04:21,306 [INFO] youtube_chat: Access token refreshed
+2026-02-21 22:04:21,306 [INFO] youtube_chat: Connected to live chat: Cg0KC2ljWGFsRXZMcnpNKicKGFVDZEJvNnN6Y290T0lBMEFvd0ZOWjNhdxILaWNYYWxFdkxyek0
+2026-02-21 22:04:21,306 [INFO] bot: Checking VM state...
+2026-02-21 22:04:21,335 [INFO] bot: Chat loop started
+2026-02-21 22:04:21,335 [INFO] bot: Execution loop started
+2026-02-21 22:04:21,696 [INFO] vote_system: Vote started, duration=20s
+2026-02-21 22:04:41,699 [INFO] vote_system: Vote ended. Winner: shutdown, counts: {'shutdown': 1, 'forceshutdown': 1}
+2026-02-21 22:04:42,719 [INFO] vm_controller: VM shutdown (acpipowerbutton)
+2026-02-21 22:05:07,724 [INFO] vm_controller: VM 'Arch' started (headless)
+2026-02-21 22:07:47,765 [INFO] main: Shutdown signal received...
+2026-02-21 22:07:47,784 [ERROR] asyncio: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000268AF25E900>
+2026-02-21 22:07:47,784 [ERROR] asyncio: Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x00000268AECA79D0>, 10165.1624588)])']
+connector: <aiohttp.connector.TCPConnector object at 0x00000268AF25EA50>
+2026-02-21 22:07:51,423 [INFO] user_db: Loaded 5 users
+2026-02-21 22:07:51,426 [INFO] bot: Starting OBS overlay server...
+2026-02-21 22:07:51,427 [INFO] bot: Connecting to YouTube Live Chat (read-only)...
+2026-02-21 22:07:51,711 [INFO] youtube_chat: Access token refreshed
+2026-02-21 22:07:51,711 [INFO] youtube_chat: Connected to live chat: Cg0KC2ljWGFsRXZMcnpNKicKGFVDZEJvNnN6Y290T0lBMEFvd0ZOWjNhdxILaWNYYWxFdkxyek0
+2026-02-21 22:07:51,711 [INFO] bot: Checking VM state...
+2026-02-21 22:07:51,740 [INFO] bot: Chat loop started
+2026-02-21 22:07:51,740 [INFO] bot: Execution loop started
+2026-02-21 22:07:52,081 [INFO] vote_system: Vote started, duration=20s
+2026-02-21 22:08:12,081 [INFO] vote_system: Vote ended. Winner: shutdown, counts: {'shutdown': 1, 'forceshutdown': 1}
+2026-02-21 22:08:13,101 [INFO] vm_controller: VM shutdown (acpipowerbutton)
+2026-02-21 22:37:26,980 [INFO] main: Shutdown signal received...
+2026-02-21 22:37:27,009 [ERROR] asyncio: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002E2CAED27B0>
+2026-02-21 22:37:27,010 [ERROR] asyncio: Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002E2CA927B40>, 11945.9254409)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000002E2CAED2900>
+2026-02-21 22:41:56,157 [INFO] user_db: Loaded 7 users
+2026-02-21 22:41:56,160 [INFO] bot: Starting OBS overlay server...
+2026-02-21 22:41:56,161 [INFO] bot: Connecting to YouTube Live Chat (read-only)...
+2026-02-21 22:41:56,394 [INFO] youtube_chat: Access token refreshed
+2026-02-21 22:41:56,394 [INFO] youtube_chat: Connected to live chat: Cg0KC252bXEtNkJrRDRNKicKGFVDZEJvNnN6Y290T0lBMEFvd0ZOWjNhdxILbnZtcS02QmtENE0
+2026-02-21 22:41:56,394 [INFO] bot: Checking VM state...
+2026-02-21 22:41:56,424 [INFO] bot: Chat loop started
+2026-02-21 22:41:56,425 [INFO] bot: Execution loop started
+2026-02-21 22:43:38,691 [INFO] vote_system: Vote started, duration=20s
+2026-02-21 22:43:58,692 [INFO] vote_system: Vote ended. Winner: forceshutdown, counts: {'forceshutdown': 1}
+2026-02-21 22:43:59,811 [INFO] vm_controller: VM shutdown (poweroff)
+2026-02-21 22:44:04,841 [INFO] vm_controller: VM 'Arch' started (headless)
+2026-02-21 22:46:16,108 [ERROR] youtube_chat: Poll error: 
+2026-02-21 22:48:03,637 [ERROR] youtube_chat: Poll error: Cannot connect to host youtube.googleapis.com:443 ssl:default [getaddrinfo failed]
+2026-02-21 22:48:13,640 [ERROR] youtube_chat: Poll error: Cannot connect to host youtube.googleapis.com:443 ssl:default [getaddrinfo failed]
+2026-02-21 22:48:53,109 [INFO] main: Shutdown signal received...
+2026-02-21 22:48:53,132 [ERROR] asyncio: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000020094C527B0>
+2026-02-21 22:48:53,133 [ERROR] asyncio: Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000020094B1A2B0>, 12623.9804049)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000020094C52900>
+2026-02-21 22:49:12,999 [INFO] user_db: Loaded 8 users
+2026-02-21 22:49:13,002 [INFO] bot: Starting OBS overlay server...
+2026-02-21 22:49:13,003 [INFO] bot: Connecting to YouTube Live Chat (read-only)...
+2026-02-21 22:49:13,182 [INFO] youtube_chat: Access token refreshed
+2026-02-21 22:49:13,182 [INFO] youtube_chat: Connected to live chat: Cg0KC252bXEtNkJrRDRNKicKGFVDZEJvNnN6Y290T0lBMEFvd0ZOWjNhdxILbnZtcS02QmtENE0
+2026-02-21 22:49:13,182 [INFO] bot: Checking VM state...
+2026-02-21 22:49:13,208 [INFO] bot: Chat loop started
+2026-02-21 22:49:13,208 [INFO] bot: Execution loop started
+2026-02-21 22:49:13,430 [INFO] vote_system: Vote started, duration=20s
+2026-02-21 22:49:33,432 [INFO] vote_system: Vote ended. Winner: forceshutdown, counts: {'forceshutdown': 1}
+2026-02-21 22:49:34,552 [INFO] vm_controller: VM shutdown (poweroff)
+2026-02-21 22:49:39,543 [INFO] vm_controller: VM 'Arch' started (headless)
