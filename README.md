@@ -156,7 +156,7 @@ STEP 4A — Create a Google Cloud Project
 
 STEP 4B — Enable YouTube Data API v3
 
-  1. In Google Cloud Console, go to "APIs & Services" → "Library"
+  1. In Google Cloud Console, go to "APIs & Services" → Library
   2. Search for "YouTube Data API v3"
   3. Click it → Click "Enable"
 
@@ -223,32 +223,11 @@ STEP 4F — Find Your Channel ID
     It looks like: UCxxxxxxxxxxxxxxxxxxxxx
 
 
-STEP 4E — Get Your Refresh Token
-
-  This lets the bot post messages as your YouTube channel.
-
-  In your terminal, navigate to the archstream folder:
-    cd path/to/archstream
-
-  Run the token helper:
-    python get_token.py
-
-  A browser window will open. Sign in with the YouTube account you want
-  the bot to post from. Grant the permissions requested.
-
-  After authorizing, the script prints:
-    Refresh Token: 1//0gAB...
-
-  Copy that refresh token. You'll need it in config.json.
-
-
 STEP 4G — Find Your Live Chat ID
 
 Live Chat ID:
 Edit getchat_id.py and add the same api key that is in your config.json.
-now run python getchat_id.py enter the link to you're stream. EG: "https://www.youtube.com/watch?v=123h4" now you will get that id! put that in config.json
-
-
+now run python getchat_id.py enter the link to your stream. EG: "https://www.youtube.com/watch?v=123h4" now you will get that id! put that in config.json
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -401,8 +380,6 @@ STEP 8B — Start the Bot
  NOW IN THE LOG TERMINAL SCROLL UP YOU WILL SEE A IP ADD THAT AS A BROWSER SOURCE IN OBS!!! TOO SEE THE CHAT AND EXECUTED COMMANDS!
 
 
-
-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PART 9: COMMON ISSUES & TROUBLESHOOTING
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -522,91 +499,57 @@ CHAT COMMAND DISPLAY OVERLAY
 PART 11: COMMAND REFERENCE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🖱️ MOUSE COMMANDS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+USER COMMANDS (!type = typing into VM)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-!move left / right / up / down [steps]   → Move mouse in a direction (up to 10 steps)
-!move [dx] [dy]                          → Move mouse by exact pixel offset
-!abs [x] [y]                             → Move mouse to exact screen position
-!click                                   → Left click
-!click right / middle                    → Right or middle click
-!rclick                                  → Right click (shortcut)
-!drag [dx] [dy] [button]                 → Click and drag by offset
-!scroll [amount]                         → Scroll up (negative) or down (positive)
+  • !type <text>      → Types text inside VM
+  • !mouse <x> <y>    → Moves mouse relative to current position
+  • !click [left/right] → Simulates mouse click
+  • !vote <command>    → Starts a vote for dangerous commands (revert, shutdown)
+  • !help              → Shows this help message
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⌨️ KEYBOARD COMMANDS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-!type [text]          → Type text on the keyboard
-!send [text]          → Type text and press Enter
-!enter                → Press the Enter key
-!key [keyname]        → Press a single key
-!combo [key+key]      → Press a key combination (e.g. ctrl+c)
-!keydown [key]        → Hold a key down
-!keyup [key]          → Release a held key
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ADMIN COMMANDS (!vote overrides, etc.)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 Valid key names:
-   Arrow keys  →  up  down  left  right
-   Navigation  →  home  end  pageup  pagedown
-   Common      →  enter  space  backspace  tab  escape  delete  insert
-   Modifiers   →  ctrl  shift  alt
-   Function    →  f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12
-   Other       →  printscreen
+  • !revert            → Restores snapshot SafeBase
+  • !shutdown          → Gracefully shuts down VM
+  • !restart           → Restarts the VM
+  • !kill <user>        → Removes a user from voting (admin only)
+  • !set <param> <val> → Adjust bot parameters on the fly (admin only)
 
-📌 Combo examples:
-   !combo ctrl+c        → Copy
-   !combo ctrl+v        → Paste
-   !combo ctrl+z        → Undo
-   !combo ctrl+alt+t    → Open terminal (Linux)
-   !combo alt+f4        → Close window
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⏱️ OTHER COMMANDS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+VOTE SYSTEM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-!wait [seconds]    → Wait up to 10 seconds
-!stats             → View your personal command stats
-!leaderboard       → See the top players
-!uptime            → Check stream uptime
-!help              → List all commands
-!help [command]    → Get details on a specific command
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🗳️ VOTE COMMANDS  (community must agree!)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-!vote shutdown        → Vote to gracefully shut down the VM
-!vote forceshutdown   → Vote to hard reset the VM
-
+  • Dangerous commands require votes
+  • Default: 50% of active users in chat must vote
+  • Admins can override votes
+  • Vote duration and thresholds are configurable in config.json
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-QUICK START CHECKLIST
+PART 12: SAFETY WARNINGS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  [ ] Installed Python 3.11+
-  [ ] Installed VirtualBox, VBoxManage accessible from terminal
-  [ ] Downloaded Arch Linux ISO
-  [ ] Created VM named "ArchLinuxChaos" with ISO attached
-  [ ] Created "SafeBase" snapshot
-  [ ] Created Google Cloud project with YouTube Data API v3 enabled
-  [ ] Got API Key
-  [ ] Created OAuth2 Desktop credentials
-  [ ] Ran get_token.py, got refresh token
-  [ ] Ran getchat_id.py, got live chat id
-  [ ] Filled in config.json with all credentials
-  [ ] Installed Python dependencies: pip install -r requirements.txt
-  [ ] Started a YouTube livestream
-  [ ] Started OBS capturing the VM
-  [ ] Started the bot: python main.py
-  [ ] Tested !help in chat
-  [ ] Tested !startvm in chat (as admin)
-  [ ] Tested !move right in chat
-  [ ] Chaos begins!
-
+  • The VM runs with root privileges inside Arch Linux. Be careful with commands.
+  • Do not install unsafe packages or scripts inside the VM.
+  • Use snapshots for quick recovery.
+  • User input is untrusted; bot sanitizes input for keyboard/mouse, but extreme
+    commands may still crash the VM.
+  • Always test new features in a separate test VM before going live.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-GOOD LUCK. MAY YOUR PACMAN -SYU NEVER FAIL.
+PART 13: CONTACT & SUPPORT
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  • GitHub: https://github.com/YOUR_REPO_HERE
+  • Issues: https://github.com/YOUR_REPO_HERE/issues
+  • Discord: optional server for community help
+
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                              END OF README                                         ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
