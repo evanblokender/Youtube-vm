@@ -2,7 +2,7 @@ import requests
 import urllib.parse
 
 
-API_KEY = "AIzaSyDwfb5r047yrEIXxaK7BM8WVnKKaix50LA"
+API_KEY = "your_api_key"
 
 
 def extract_video_id(url: str) -> str:

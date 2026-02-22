@@ -1,12 +1,12 @@
 {
-  "youtube_api_key": "AIzaSyDwfb5r047yrEIXxaK7BM8WVnKKaix50LA",
-  "youtube_channel_id": "UCdBo6szcotOIA0AowFNZ3aw",
-  "youtube_client_id": "851988154289-v4ckuhsudroop9cjf62v36fanbmaqo0v.apps.googleusercontent.com",
-  "youtube_client_secret": "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",
-  "youtube_refresh_token": "1//05vO5_JJbEdxFCgYIARAAGAUSNwF-L9Ir75S3Oq5LksGIbPqvgW_-FGrq1vnxleIvJ6Ruk61QPpCaNKEmD__sVJR7PQdd5-2s7MY",
-  "youtube_live_chat_id": "Cg0KC252bXEtNkJrRDRNKicKGFVDZEJvNnN6Y290T0lBMEFvd0ZOWjNhdxILbnZtcS02QmtENE0",
+  "youtube_api_key": "your_api_key",
+  "youtube_channel_id": "your_youtube_channel_id",
+  "youtube_client_id": "your_youtube_client_id",
+  "youtube_client_secret": "your_youtube_client_secret",
+  "youtube_refresh_token": "your_refresh_token",
+  "youtube_live_chat_id": "your_youtube_live_chat_id",
 
-  "vm_name": "Arch",
+  "vm_name": "your_vm_name",
   "vboxmanage_path": "VBoxManage",
   "snapshot_name": "SafeBase",
   "screenshot_interval": 1.0,
@@ -26,8 +26,8 @@
   "points_per_vote_win": 5,
   "leaderboard_size": 10,
 
-  "admin_user_ids": ["UCdBo6szcotOIA0AowFNZ3aw"],
-  "mod_user_ids": [],
+  "admin_user_ids": ["admin1"],
+  "mod_user_ids": ["mod 1"],
 
   "stream_title": "YouTube Chat Controls Arch Linux Install!",
   "auto_restart_on_failure": true,
